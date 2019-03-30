@@ -31,7 +31,8 @@ function resolveAttack() {
     enemyCharacter.remove();
     enemyCharacter = null;
     enemiesBeaten++;
-  } else if (enemiesBeaten === 3) {
+  }
+  if (enemiesBeaten === 3) {
     explainText.text("YAYYYYY!!!!!");
     logText.text("WOOHOO you win! you beat ALL the baddies!");
     $("#reset-button").css("display", "block");
