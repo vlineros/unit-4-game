@@ -10,8 +10,6 @@ var enemiesBeaten = 0;
 var explainText = $("#explain-text");
 
 function resolveAttack() {
-  console.log(enemyAttack);
-  console.log(mainCharAttack);
   mainCharacterHealth -= enemyAttack;
   enemyHealth -= mainCharAttack;
   mainCharacter.children(".health-indicator").text(mainCharacterHealth);
@@ -29,13 +27,11 @@ function resolveAttack() {
     logText.text("Oh no! you have been slain!");
     $("#reset-button").css("display", "block");
     mainCharacter.remove();
-  }
-  if (enemyHealth <= 0) {
+  } else if (enemyHealth <= 0) {
     enemyCharacter.remove();
     enemyCharacter = null;
     enemiesBeaten++;
-  }
-  if (enemiesBeaten === 3) {
+  } else if (enemiesBeaten === 3) {
     explainText.text("YAYYYYY!!!!!");
     logText.text("WOOHOO you win! you beat ALL the baddies!");
     $("#reset-button").css("display", "block");
