@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Star Wars RPG game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Star Wars RPG Game</h1>
+      </div>
+      <p id="explain-text">Welcome! Choose a character to begin!</p>
+      <div class="row">
+        <div class="col-2">
+          <button id="attack-button">Attack!</button>
+          <button id="reset-button">Try again?</button>
+        </div>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-3" id="luke-space">
+              <button class="img actor" id="luke" value="13">
+                <img src="assets/images/luke-character-rev.jpg" />
+                <p class="health-indicator">170</p>
+                <p class="power">7</p>
+              </button>
+            </div>
+            <div class="col-3" id="vader-space">
+              <button class="img actor" id="vader" value="14">
+                <img src="assets/images/darth-vader-character-rev.jpg" />
+                <p class="health-indicator">165</p>
+                <p class="power">8</p>
+              </button>
+            </div>
+            <div class="col-3" id="maul-space">
+              <button class="img actor" id="maul" value="10">
+                <img src="assets/images/darth-maul-character-rev.png" />
+                <p class="health-indicator">155</p>
+                <p class="power">11</p>
+              </button>
+            </div>
+            <div class="col-3" id="rey-space">
+              <button class="img actor" id="rey" value="18">
+                <img src="assets/images/rey-character.jpg" />
+                <p class="health-indicator">170</p>
+                <p class="power">6</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5" id="player-space"></div>
+        <div class="col-2"><h2>VS.</h2></div>
+        <div class="col-5" id="enemy-space"></div>
+      </div>
+      <p id="log-text"></p>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
