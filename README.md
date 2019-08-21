@@ -1,6 +1,6 @@
 # unit-4-game - Star Wars RPG
 
-A simple fighting game where you pick your character and then find a way to defeat all the other characters
+### A simple fighting game where you pick your character and then find a way to defeat all the other characters
 
 Made with bootstrap, HTML, CSS, and JQuery
 
